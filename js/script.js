@@ -68,8 +68,8 @@ function writeYourGenres() {
     }
     console.log(personalMovieDB);
 }
-// start();
-// rememberMyFilms();
-// detectPersonalLevel();
-// showMyDB();
+start();
+rememberMyFilms();
+detectPersonalLevel();
+showMyDB();
 writeYourGenres();
