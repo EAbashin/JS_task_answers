@@ -15,6 +15,8 @@ P.S. Функции вызывать не обязательно */
 
 let numberOfFilms;
 
+start();
+
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -68,7 +70,7 @@ function writeYourGenres() {
     }
     console.log(personalMovieDB);
 }
-start();
+
 rememberMyFilms();
 detectPersonalLevel();
 showMyDB();
