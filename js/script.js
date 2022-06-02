@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         addForm = document.querySelector('form.add'),
         addInput = addForm.querySelector('.adding__input'),
         checkbox = addForm.querySelector('[type = "checkbox"]'),
-        filmsWatched = document.querySelectorAll('.promo__interactive-item'),
         movieList = document.querySelector('.promo__interactive-list');
 
     const deleteAdv = (arr) => {
@@ -84,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (favorite) {
                 console.log("Добавляем любимый фильм");
             }
-            
+
             movieDB.movies.push(newFilm);
             creatMovieList(movieDB.movies, movieList);
         }
@@ -95,11 +94,3 @@ document.addEventListener('DOMContentLoaded', () => {
     makeChenges();
     creatMovieList(movieDB.movies, movieList);
 });
-
-// del.addEventListener('click', () => {
-    // const indexItem = movieDB.movies.indexOf(del.previousSibling),
-    //       item = movieDB.movies[indexItem];
-    
-    // movieDB.movies.splice (3, 2);
-// });
-// console.log(del); 
